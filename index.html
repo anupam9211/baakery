@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="index.js">
+	<title>roshan's</title>
+</head>
+<body>
+<div class="nav">
+	<ul>
+	<li><a href="#"><i class="fas fa-cookie-bite"></i></a></li>
+	<li><b>roshan's</b></li>
+	<li><a href="#"><span><i class="fas fa-power-off"></i></span></a></li>
+	</ul>
+</div>
+<div class="div2">
+	<div id="div1"><b>Discover Our Story</b></div>
+	<div id="div2">About Roshan's<br><br><i>Roshan's is situated in the core of Kapurthala city, serving it’s customers with quality products.<br> The specialty of the bakery is that you can avail all products in fresh condition and are 100% vegetarian.</i></div>
+	<div id="div3"><button><a href="#">Order Here</a></button></div>
+</div>
+<div class="div3" style="max-width: 100%;">
+	<img class="mySlides" src="pic1.jpeg" style="width:99%;height: 40rem;" border-radius="5%">
+  <img class="mySlides" src="pic2.jpeg" style="width:99%;height: 40rem;" border-radius="5%">
+  <img class="mySlides" src="pic3.jpeg" style="width:99%;height: 40rem;"border-radius="5%">
+  <img class="mySlides" src="pic4.jpeg" style="width:99%;height: 40rem;"border-radius="5%">
+  <img class="mySlides" src="pic5.jpeg" style="width:99%;height: 40rem;"border-radius="5%">
+</div><br>
+<div class="div4">
+	<div class="div1"><b>Roshan's Best</b><BR><br>	
+	</div>
+	<div class="div2">
+		<img src="pic6.jpeg" width="19%" height="auto">
+		<img src="pic11.jpeg" width="19%"height="auto">
+		<img src="pic9.jpeg" width="19%"height="auto">
+		<img src="pic10.jpeg" width="19%"height="auto">
+	</div>
+	
+</div>
+<b><center><button>Order Now</button></center><br><br><br>
+<div class="div5">
+	<div id="div1">
+		<img src="pic6.jpeg" width="80%" height="70%"><br><br>Cokies<button><a href="#">Order here</a></button>
+	</div>
+	<div id="div2"><img src="pic10.jpeg" width="80%" height="70%"><br><br>Ice-creams<button><a href="#">Order here</a></button></div>
+	<div id="div3"><img src="pic7.jpeg" width="80%" height="70%"><br><br>Cakes<button><a href="#">Order here</a></button></div>
+	<div id="div4"><img src="pic8.jpeg" width="80%" height="70%"><br><br>Pasteries<button><a href="#">Order here</a></button></div>
+	<div id="div5"><img src="pic9.jpeg" width="80%" height="70%"><br><br>Cup-cakes<button><a href="#">Order here</a></button></div>
+</div><br><br><br><br><br><br>
+<div class="div6">
+	<div id="div1"><b>Order Direct<br>
+		Start Ordering Now</b><i class="fas fa-cookie-bite"></i><br>
+	</div>
+	<div id="div2"><button>
+		<a href="#"><b>Sadar bazar,Kapurthala</b><i class="fas fa-map-marker-alt"></i><p>Order Now</p></a></button></div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel,1800); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
